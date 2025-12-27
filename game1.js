@@ -573,7 +573,7 @@ let squareClicked = function(e){
 	let square = getSquare(x, y);
 	if(selectedSquare === null){
 		if(square.piece === null){
-			showError("Select only chess piece.");
+			console.log("Select only chess piece.");
 		}else if(square.piece.color != currentPlayer.color){
 			showError("Select your chess piece as assigned.");
 		}else{
@@ -693,7 +693,7 @@ let move = function(start, end){
         }
         nextTurn();
 	}else{
-		showError("The Move is Invalid.");
+		console.log("The Move is Invalid.");
         piece.x = start.x;
         piece.y = start.y;
         start.setPiece(start.piece);
