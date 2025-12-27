@@ -1,0 +1,150 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.main-ui {
+  display: inline-block;
+  border-radius: 10px;
+  max-width: 90%;
+  height: 680px;
+  margin: 20px;
+  width: 500px;
+}
+
+.latest {
+  margin: 20px;
+  margin-bottom: 5px;
+  width: 800px;
+  height: 680px;
+  max-width: 80%;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+  border: 5px solid rgb(64, 64, 64);
+  border-radius: 10px;
+  background-color: #0c79ac;
+  color: #ffffff;
+}
+
+.welcome {
+   padding: 15px;
+   padding-bottom: 20px;
+   text-align: center;
+   border: 5px solid rgb(64 64 64);
+   border-radius: 10px;
+   background-color: #228020;
+   font-family: inherit;
+   color: #ffffff;
+}
+
+.calendar-container {
+    padding: 15px;
+    border: 5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(132, 47, 67);
+    font-family: inherit;
+    color: #ffffff;
+}
+
+.latest > h2, .news {
+   margin: 15px auto;
+   padding: 4px;
+}
+
+.news {
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   border-radius: 5px;
+}
+
+.news > h4 {
+   margin: 15px;
+   font-size: 80%;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.image-category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(22, 80, 20, 0.9);
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.image-container {
+  position: relative;
+  max-width: 1208px;
+  max-height: 230px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.image-container img {
+  background-color: #000000;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.calendar-header {
+    background-color: rgb(132, 47, 67);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-grid.dark-mode {
+  --bg-color: #202020;
+  --text-color: #ffffff;
+}
+
+.calendar-grid {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-grid th, .calendar-grid td {
+    border: 2px solid #000000;
+    padding: 7px;
+    text-align: center;
+}
+
+.calendar-grid td.today {
+    background-color: rgb(85, 204, 244);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}

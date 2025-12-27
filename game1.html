@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="game1.css">
+  <title>Chess - EnadSys Tab</title>
+</head>
+  
+<div id="main-content">
+ <div class="navbar">
+  <a href="webgames.html">Back</a>
+  <a href="index.html">Home</a>
+   <div class="dropdown">
+     </div>
+   </div>
+
+<body onload="setup();">
+	<div class="container">
+		<p id="turnInfo">Player's Turn: <b>White</b></p>
+		<section id="board">
+			<div class="overlay" id="promotionMessage">
+				<div class="overlay-inner">
+					<span class="overlay-title">Promotion!</span>
+					<p class="overlay-text" id="alertText"></p>
+					<ul id="promotionList" class="white">
+						<li><a href="#" class="promotion-button queen" onclick="promote('queen');"></a></li>
+						<li><a href="#" class="promotion-button castle" onclick="promote('castle');"></a></li>
+						<li><a href="#" class="promotion-button bishop" onclick="promote('bishop');"></a></li>
+						<li><a href="#" class="promotion-button knight" onclick="promote('knight');"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="overlay" id="errorMessage">
+				<div class="overlay-inner">
+					<span class="overlay-title">Game Info</span>
+					<p class="overlay-text" id="errorText"></p>
+					<a href="#" class="overlay-button" onclick="closeError();">Close</a>
+				</div>
+			</div>
+			<div class="overlay" id="endMessage">
+				<div class="overlay-inner">
+					<span class="overlay-title">Game Over!</span>
+					<p class="overlay-text" id="endText"></p>
+					<a href="#" class="overlay-button" onclick="newGame();">New Game</a>
+				</div>
+			</div>
+		</section>
+	</div>
+      
+    <div class="disconnect-screen" id="disconnect-screen">
+       <div class="offline-content">
+            <h3>You're offline</h3>
+            <h6>Games must be played online.</h6>
+            <h6>Please try again later</h6>
+        </div>
+    </div>
+  
+<script type="text/javascript" src="game1.js"></script>
+<script src="scripts/disconnection.js"></script>
+</body>
+</html>

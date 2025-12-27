@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/article.css">
+  <title>Blogs & Articles - EnadSys Tab</title>
+</head>
+<body>
+
+  <div id="main-content">
+ <div class="navbar">
+  <a href="calendar.html">Calendar</a>
+  <a href="index.html">Home</a>
+   <div class="dropdown">
+     <button class="dropbtn">Blogs & Articles<i class="fa fa-caret-down"></i></button>
+     <div class="dropdown-content">
+       <a href="index.html">Home</a>
+       <a href="webgames.html">Web Games</a>
+       <a id="theme-toggle">Dark Mode</a>
+       <a href="secret.html">About</a>
+     </div>
+   </div>
+ </div>
+
+<article class="blogs">
+  <h2>Blogs</h2>
+  <p>Our Latest Updates in Blogs</p>
+  <article class="web">
+  <div class="image-container">
+    <img src="#" style="width:1213px;height:200px;";>
+    </div>
+    <h3>#</h3>
+    <button class="button button-info" onclick="location.href='blog1.html'">Read More</button>
+    </article>
+  <article class="web">
+    <div class="image-container">
+    <img src="#" style="width:1213px;height:200px;";>
+    </div>
+    <h3>#</h3>
+    <button class="button button-info" onclick="location.href='blog2.html'">Read More</button>
+  </article>
+</article>
+
+<article class="news-all">
+  <h2>Articles</h2>
+  <p>The latest source of Blogs and Articles of the week.</p>
+  
+   <article class="web">
+     <div class="image-container">
+     <img src="newspics/climate-change.jpg" alt="jpg1" style="width:1213px;height:200px;";>
+     </div>
+    <h3>Climate Change</h3>
+    <p>The Topic about the Mother Nature caused by a Human Activity.</p>
+     <button class="button button-info" onclick="location.href='news1.html'">Read More</button>
+  </article>
+
+  <article class="web">
+    <div class="image-container">
+    <img src="newspics/bugcheck.jpg" alt="jpg2" style="width:1213px;height:200px;";>
+  </div>
+    <h3>Blue Screen of Death</h3>
+    <p>An infamous error screen on Windows Systems. From Windows 1.0 to Windows 11 22h2.</p>
+    <button class="button button-info" onclick="location.href='news2.html'">Read More</button>
+  </article>
+</article>
+
+<div class="disconnect-screen" id="disconnect-screen">
+     <div class="offline-content">
+       <h3>You're offline</h3>
+       <h6>Blogs and Articles requires stable internet connection.</h6>
+       <h6>Please try again later</h6>
+   </div>
+</div>
+    
+<script src="scripts/disconnection.js"></script>
+</body></html>

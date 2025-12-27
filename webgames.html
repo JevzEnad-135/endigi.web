@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/article.css">
+  <title>Web Games - EnadSys Tab</title>
+</head>
+<body>
+  
+<div id="main-content">
+ <div class="navbar">
+  <a href="calendar.html">Calendar</a>
+  <a href="index.html">Home</a>
+   <div class="dropdown">
+     <button class="dropbtn">Web Games<i class="fa fa-caret-down"></i></button>
+     <div class="dropdown-content">
+       <a href="index.html">Home</a>
+       <a href="article.html">Blogs & Articles</a>
+       <a id="theme-toggle">Dark Mode</a>
+       <a href="secret.html">About</a>
+     </div>
+   </div>
+ </div>
+      
+  <article class="news-all">
+  <center>
+  <h2>Web Games</h2>
+  <p>Here are the classic games on the web.</p>
+  </center>
+  
+   <article class="web">
+     <div class="image-container">
+     <img src="images/chess.jpg" alt="chess" style="width:1213px;height:200px";>
+     </div>
+   <h3>Chess (2 Players)</h3>
+     <p>A classic strategy board game for two players (Playing on mobile is recommended).</p>
+   <button class="button button-info" onclick="location.href='game1.html'">Play Game</button>
+</article>
+
+   <article class="web">
+   <div class="image-container">
+     <img src="#" alt="snake" style="width:1213px;height:200px";>
+     </div>
+   <h3>Snake (1 Player)</h3>
+     <p>The classic game returns in the web.</p>
+   <button class="button button-info" onclick="location.href='game2.html'">Play Game</button>
+</article>
+  
+   <article class="web">
+   <div class="image-container">
+     <img src="#" alt="minesweeper" style="width:1213px;height:200px";>
+     </div>
+   <h3>Minesweeper (1 Player)</h3>
+     <p>A classic puzzle game on the web.</p>
+   <button class="button button-info" onclick="location.href='game3.html'">Play Game</button>
+</article>
+</article>
+      
+<div class="disconnect-screen" id="disconnect-screen">
+     <div class="offline-content">
+       <h3>You're offline</h3>
+       <h6>Games must be played online.</h6>
+       <h6>Please try again later</h6>
+   </div>
+</div>
+      
+<script src="scripts/disconnection.js"></script>
+</body></html>

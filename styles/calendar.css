@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.calendar-container {
+  color: #ffffff;
+    width: 80%;
+    margin: 20px auto;
+    border: 5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+    background-color: rgb(132, 47, 67);
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calendar-header {
+    background-color: rgb(132, 47, 67);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-grid.dark-mode {
+  --bg-color: #202020;
+  --text-color: #ffffff;
+}
+
+.calendar-grid {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-grid th, .calendar-grid td {
+    border: 2px solid #000000;
+    padding: 7px;
+    text-align: center;
+}
+
+.calendar-grid td.today {
+    background-color: rgb(85, 204, 244);
+}
+
+.day-button {
+ border: 30px;
+  color: rgb(255, 255, 255);
+  background-color: #0c79bc;
+  border-radius: 10px;
+  padding: 10px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 2px;
+  cursor: pointer;
+ }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.holiday {
+   margin: 20px auto;
+   width: 80%;
+   padding: 15px;
+   text-align: center;
+   border: 5px solid rgb(64, 64, 64);
+   border-radius: 10px;
+   background-color: #228020;
+   color: #ffffff; 
+}
