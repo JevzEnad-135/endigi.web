@@ -1,6 +1,6 @@
 # Endcie Digital web (endigi.web)
 
-The Endcie Digital web is a multi-purpose web developed by Endcie Digital and UpDesktop on September 2025. Version 2026.01 is our first version of our web.
+The Endcie Digital web is a multi-purpose web developed by Endcie Digital and Published by UpDesktop on September 2025. Version 2026.01 is our first version of our web.
 
 Note: This website is work in progress. Heres what to know:
 
