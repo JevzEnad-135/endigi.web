@@ -1,1 +1,12 @@
-# endigi.web
+# Endcie Digital web (endigi.web)
+
+The Endcie Digital web is a multi-purpose web developed by Endcie Digital and UpDesktop on September 2025. Version 2026.01 is our first version of our web.
+
+Note: This website is work in progress. Heres what to know:
+
+1. Some thumbnails are not yet added
+2. In Blogs and Articles page, our articles and blogs are not yet published.
+3. In Web Games page, Chess Game is only playable for 2 players on device.
+4. Screen size of your device may vary, or won't work for this device. Explore our website on your Computer via GitHub is recommended.
+
+- Programmed by: Jever Slynth P. Enad
