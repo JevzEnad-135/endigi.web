@@ -17,11 +17,19 @@
   .main-ui {
     grid-template-columns: 1fr 1fr;
   }
+  .latest {
+    width: 321px;
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .main-ui {
     grid-template-columns: 2fr 1fr;
+  }
+  .latest {
+    width: 800px;
+    max-width: 100%;
   }
 }
 
@@ -35,7 +43,6 @@
 
 .latest {
 grid-row: span 2;
-  width: 345px;
   display: inline-block;
   text-align: center;
   border: 5px solid rgb(64, 64, 64);
@@ -51,7 +58,7 @@ grid-row: span 2;
    background-color: #228020;
    font-family: inherit;
    color: #ffffff;
-   width: 345px;
+   width: 350px;
 }
 
 .calendar-container {
@@ -60,7 +67,7 @@ grid-row: span 2;
     background-color: rgb(132, 47, 67);
     font-family: inherit;
     color: #ffffff;
-    width: 345px;
+    width: 350px;
 }
 
 .latest > h2, .news {
