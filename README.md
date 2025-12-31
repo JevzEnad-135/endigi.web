@@ -11,7 +11,7 @@ Note: This website is under development. Here's what you need to know:
 
 UPDATE (Dec. 30, 2025): When we made changes to the webpage of our web, here are the names of the webpage are now renamed:
 
-= Blogs & Articles > Almanac & Blogs
-= Web Games > Games
+- Blogs & Articles > Almanac & Blogs
+- Web Games > Games
 
-- Programmed by: Jever Slynth P. Enad
+Programmed by: Jever Slynth P. Enad
