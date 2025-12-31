@@ -3,7 +3,7 @@
   --text-color: #000000;
 }
 
-.main-ui {
+.container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: 710px) {
-  .main-ui {
+  .container {
     grid-template-columns: 1fr 1fr;
   }
   .latest {
@@ -23,12 +23,13 @@
   }
 }
 
-@media screen and (min-width: 800px) {
-  .main-ui {
+@media screen and (min-width: 1080px) {
+  .container {
     grid-template-columns: 2fr 1fr;
   }
   .latest {
-    width: 800px;
+    grid-row: span 2;
+    width: 900px;
     max-width: 100%;
   }
 }
@@ -42,7 +43,6 @@
 }
 
 .latest {
-grid-row: span 2;
   display: inline-block;
   text-align: center;
   border: 5px solid rgb(64, 64, 64);
