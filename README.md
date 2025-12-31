@@ -9,6 +9,9 @@ Note: This website is under development. Here's what you need to know:
 3. In Web Games page, Chess Game is only included and playable for 2 players on device.
 4. Screen size may not fit for some mobile devices. Explore our website on your Computer via GitHub is recommended.
 
-UPDATE (Dec. 30, 2025): Blogs & Articles now renamed as Almanac & Blogs when we made changes to the webpage of our web.
+UPDATE (Dec. 30, 2025): When we made changes to the webpage of our web, here are the names of the webpage are now renamed:
+
+= Blogs & Articles > Almanac & Blogs
+= Web Games > Games
 
 - Programmed by: Jever Slynth P. Enad
