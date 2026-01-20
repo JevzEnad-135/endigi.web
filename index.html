@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <title>Home - Endcie Digital</title>
+</head>
+<body>
+
+<div id="main-content">
+<div class="navbar">
+  <a id="openDialog2">Patch Notes</a>
+     <button class="dropbtn" id="open-drawer">Home</button>
+     <div class="hub-overlay" id="nav-overlay"></div>
+     <div id="nav-drawer" class="drawer">
+       <button class="nav-close" id="close-drawer">X</button>
+       <a onclick="location.href='index.html'">Home</a>
+       <a onclick="location.href='articles.html'">Almanac</a>
+       <a onclick="location.href='games.html'">Games</a>
+       <a id="openDialog1">Maps</a>
+       <a onclick="location.href='calendar.html'">Calendar</a>
+       <a onclick="location.href='about.html'">About</a>
+    </div>
+ </div>
+  
+<div class="content">
+<div class="container-ui">
+  <article class="item latest">
+  <h2>Endcie Digital</h2>
+
+  <div class="web-grid">
+  <article class="news">
+    <div class="image-container">
+    <img src="newspics/climate-change.jpg" alt="latest-info" style="width:1000px;height:250px;">
+    <div class="image-text">Climate Change</div>
+    <div class="image-category">Almanac: Environmental</div>
+    </div>
+    <button class="button button2" onclick="location.href='almanac1.html'">Read More</button>
+  </article>
+
+  <article class="news">
+    <div class="image-container">
+    <img src="images/chess.jpg" alt="released-game" style="width:1000px;height:250px;">
+    <div class="image-text">Chess</div>
+    <div class="image-category">Games: 2 Players</div>
+    </div>
+    <button class="button button2" onclick="location.href='chess.html'">Play Game</button>
+    <button class="button button2" id="openDialog3">How to Play</button>
+  </article>
+  </div>
+
+</article>
+
+<div class="item welcome">
+ <div class="image-container">
+  <img src="images/shopify.jpg" alt="home-screen" style="width:1200px;height:230px;">
+  <div class="image-welcome">Welcome to Endcie Digital</div>
+ </div>
+  <button class="button button1" onclick="location.href='article.html'">Almanac</button>
+  <button class="button button2" onclick="location.href='webgames.html'">Games</button>
+    </div>
+
+<div class="item calendar-container">
+  <center><h2 id="currentMonthYear"></h2></center>
+    <div class="calendar-header">
+        <button id="prevMonth">Prev</button>
+        <button id="nextMonth">Next</button>
+    </div>
+    <table class="calendar-grid">
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendarBody">
+        </tbody>
+    </table>
+     <center>
+      <button class="button button1" onclick="location.href='calendar.html'">Calendar</button>
+      <button class="button button1" onclick="location.href='secret.html'">About Our Web</button>
+     </center>
+</div>
+</div>
+
+<div class="overlay" id="dialog1" style="display:none">
+  <div class="info-content" style="height:150px;">
+    <h3>Leaving to Google Maps</h3>
+    <p>Google Maps will open as a Web. You can go back anytime.</p>
+    <center>
+  <button class="button button1" onclick="window.open('https://www.google.com/maps'), location.href='index.html'">Continue</button>
+  <button class="button button1" id="closeDialog1">Back</button>
+    </center>
+  </div>
+</div>
+
+<div class="overlay" id="dialog2">
+  <div class="info-content" style="height:425px">
+    <h3>Endcie Digital Changelog</h3>
+  <table style="margin:5px 1px">
+  <thead>
+      <tr>
+        <th>Version</th>
+        <th>Changes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.0.1</td>
+        <td>
+          <h5>Dec 2025</h5>
+          <p>= Dark Theme added</p>
+          <p>= UI Elements has changed</p>
+        </td>
+      </tr>
+      <tr>
+        <td>1.0.0</td>
+        <td>
+          <h5>Sept 2025</h5>
+          <p>Project Enad Web has started the development</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ <center>
+  <button id="closeDialog2" class="button button1">Continue</button>
+ </center>
+  </div>
+</div>
+  
+  <div class="overlay" id="dialog3">
+   <div class="info-content" style="height:416px;">
+    <h3>How to Play: Chess</h3>
+    <h5>For this game, 2 Players on your device (Local Play only. Wireless Play and Versus AI is not included).</h5>
+    <h3>Making a Move:</h3>
+    <p style="margin:15px;font-size:80%;">1. On your turn, Select your chess piece and click on the square to move.</p>
+    <p style="margin:15px;font-size:80%;">2. Illegal moves are not valid and will be ignored.</p>
+    <h3>Game Rules</h3>
+    <p style="margin:15px;font-size:80%;">1. The game follows the standard chess rules (e.g. pawn promotion, en passant, check and checkmate detection).</p>
+    <p style="margin:15px;font-size:80%;">2. The game enforced the turn-based logic, white always starts first on first turn.</p>
+    <center>
+  <button class="button button1" id="closeDialog3">Back</button>
+    </center>
+   </div>
+</div>
+</div>
+
+<div class="disconnection" id="disconnect-screen">
+     <div class="offline-content">
+        <h3>You're offline</h3>
+        <h6>Please try again later</h6>
+     </div>
+   </div>
+
+<script type="text/javascript" src="scripts/calendar.js"></script>
+<script type="text/javascript" src="scripts/modal.js"></script>
+<script src="scripts/disconnection.js"></script>
+<script type="text/javascript" src="scripts/drawer.js"></script>
+  
+</body></html>

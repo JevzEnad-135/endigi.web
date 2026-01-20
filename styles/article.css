@@ -1,0 +1,138 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  height: 10px;
+  min-height: 3vh;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1190px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .news-all {
+    width: 350px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .container {
+    grid-template-columns: 2fr auto;
+  }
+  .news-all {
+    width: 500px;
+    min-width: 100%;
+  }
+  .web {
+    width: 330px;
+  }
+  .web-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-rows: 2;
+    display: grid;
+   }
+}
+
+.item {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.news-all {
+   text-align: center;
+   border: 5px solid rgb(64, 64, 64);
+   border-radius: 8px;
+   background-color: rgb(134, 47, 67);
+   color: #ffffff;
+}
+
+.blogs {
+   max-width: 100%;
+   width: 730px;
+   text-align: center;
+   border: 5px solid rgb(64, 64, 64);
+   border-radius: 8px;
+   background-color: #228020;
+   color: #ffffff;
+}
+
+.web-grid {
+   padding: 5px;
+   gap: 10px;
+}
+
+.web {
+   background-color: #202020;
+   color: #ffffff;
+   border-radius: 5px;
+   padding: 10px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.news-all > h2, .web {
+   margin: 15px auto;
+   padding: 4px;
+}
+
+.image-container {
+   position: relative;
+   max-width: 1208px;
+   max-height: 228px;
+   border: 1px solid #202020;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+}
+
+.image-container img {
+   background-color: #000000;
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: fill;
+   border-radius: 8px;
+}
+
+.a-text, .a-type {
+   position: absolute;
+   text-align: center;
+   padding: 5px 10px;
+   font-size: 20px;
+}
+
+.a-type {
+   background-color: rgba(22, 80, 20, 0.7);
+   color: #ffffff;
+   top: 0;
+   left: 0;
+   border-bottom-right-radius: 8px;
+   border-top-left-radius: 8px;
+}
+
+.a-text {
+   background-color: #202020;
+   color: #ffffff;
+   bottom: 0;
+   left: 0;
+   border-top-right-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+
+.web > h4, p {
+   margin: 15px;
+   font-size: 80%;
+}
+
+.button-info {
+   background-color: brown;
+   border-radius: 8px;
+}

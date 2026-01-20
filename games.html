@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/games.css">
+  <title>Games - Endcie Digital</title>
+</head>
+<body>
+  
+<div id="main-content">
+<div class="navbar">
+  <a onclick="location.href='index.html'">Home</a>
+  <a onclick="location.href='calendar.html'">Calendar</a>
+     <button class="dropbtn" id="open-drawer">Games</button>
+     <div class="hub-overlay" id="nav-overlay"></div>
+     <div id="nav-drawer" class="drawer">
+       <button class="nav-close" id="close-drawer">X</button>
+       <a onclick="location.href='index.html'">Home</a>
+       <a onclick="location.href='articles.html'">Almanac</a>
+       <a onclick="location.href='games.html'">Games</a>
+       <a onclick="location.href='calendar.html'">Calendar</a>
+       <a onclick="location.href='about.html'">About</a>
+    </div>
+ </div>
+      
+<article class="all-games">
+  <h2>Games</h2>
+  <p>Here are the games on the web. Provided by CodeTap.</p>
+  
+<div class="web-grid">
+<article class="web">
+   <div class="image-container">
+     <img src="images/chess.jpg" alt="chess" style="width:1213px;height:200px";>
+     <div class="game-type">Strategy</div>
+     <div class="game-text">Chess</div>
+     </div>
+   <button class="button button-info" onclick="location.href='chess.html'">Play Game</button>
+   <button class="button button-info" id="openDialog1">How to Play</button>
+</article>
+
+<article class="web">
+   <div class="image-container">
+     <img src="#" style="width:1213px;height:200px";>
+     <div class="game-type">Coming Soon</div>
+     <div class="game-text">Coming Soon</div>
+     </div>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Play Game</button>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">How to Play</button>
+</article>
+  
+<article class="web">
+   <div class="image-container">
+     <img src="#" style="width:1213px;height:200px";>
+     <div class="game-type">Coming Soon</div>
+     <div class="game-text">Coming Soon</div>
+     </div>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Play Game</button>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">How to Play</button>
+</article>
+
+<article class="web">
+   <div class="image-container">
+     <img src="#" style="width:1213px;height:200px";>
+     <div class="game-type">Coming Soon</div>
+     <div class="game-text">Coming Soon</div>
+     </div>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Play Game</button>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">How to Play</button>
+</article>
+
+<article class="web">
+   <div class="image-container">
+     <img src="#" style="width:1213px;height:200px";>
+     <div class="game-type">Coming Soon</div>
+     <div class="game-text">Coming Soon</div>
+     </div>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Play Game</button>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">How to Play</button>
+</article>
+
+<article class="web">
+   <div class="image-container">
+     <img src="#" style="width:1213px;height:200px";>
+     <div class="game-type">Coming Soon</div>
+     <div class="game-text">Coming Soon</div>
+     </div>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Play Game</button>
+   <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">How to Play</button>
+</article>
+</div>
+</article>
+
+<div class="overlay" id="dialog1">
+   <div class="info-content" style="height:416px;">
+    <h3>How to Play: Chess</h3>
+    <h5>For this game, 2 Players on your device (Local Play only. Wireless Play and Versus AI is not included).</h5>
+    <h3>Making a Move:</h3>
+    <p>1. On your turn, Select your chess piece and click on the square to move.</p>
+    <p>2. Illegal moves are not valid and will be ignored.</p>
+    <h3>Game Rules</h3>
+    <p>1. The game follows the standard chess rules (e.g. pawn promotion, en passant, check and checkmate detection).</p>
+    <p>2. The game enforced the turn-based logic, white always starts first on first turn.</p>
+    <center>
+      <button class="button button2" onclick="location.href='game1.html'">Play</button>
+      <button class="button button1" id="closeDialog1">Close</button>
+    </center>
+   </div>
+</div>
+ 
+<div class="disconnection" id="disconnect-screen">
+     <div class="offline-content">
+       <h3>You're offline</h3>
+       <h6>Games must be played online.</h6>
+       <h6>Please try again later</h6>
+   </div>
+</div>
+      
+<script src="scripts/disconnection.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/theme.js"></script>
+<script type="text/javascript" src="scripts/drawer.js"></script>
+
+</body></html>

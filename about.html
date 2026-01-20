@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles/body.css">
+ <link rel="stylesheet" href="styles/modal.css">
+ <title>About - Endcie Digital</title>
+</head>
+<body>
+ 
+<div id="main-content">
+<div class="navbar">
+  <a onclick="location.href='index.html'">Home</a>
+  <a id="openDialog1">Maps</a>
+     <button class="dropbtn" id="open-drawer">About</button>
+     <div class="hub-overlay" id="nav-overlay"></div>
+     <div id="nav-drawer" class="drawer">
+       <button class="nav-close" id="close-drawer">X</button>
+       <a onclick="location.href='index.html'">Home</a>
+       <a onclick="location.href='articles.html'">Almanac</a>
+       <a onclick="location.href='games.html'">Games</a>
+       <a onclick="location.href='calendar.html'">Calendar</a>
+       <a onclick="location.href='about.html'">About</a>
+    </div>
+ </div>
+  
+ <center>
+  <h2>Our Website</h2>
+  <img src="images/nyan-cat.gif" alt="nyan_cat" style="width:320px;height:200px;">
+  <h5>Programmed by: Jever Slynth P. Enad</h5>
+  <h6>Xbox Gamertag: End5ie</h6>
+  <h6>Copyright 2026 - Endcie Digital</h6>
+  <a href="#" id="openDialog2">Click me! Its everything secret here...</a>
+  <h5>References</h5>
+  <h6>Templates and Handouts by: <a href="https://w3schools.com">W3Schools</a></h6>
+  <h6>Games Provided by: <a href="https://codetap.org">CodeTap</a></h6>
+  <h6>Written in: HTML, CSS, and JavaScript</h6>
+  </center>
+
+<div class="overlay" id="dialog1" style="display:none">
+  <div class="info-content" style="height:150px;">
+    <h3>Leaving to Google Maps</h3>
+    <p style="font-size:15px">Google Maps will open as a Web. You can go back anytime.</p>
+    <center>
+  <button class="button button1" onclick="window.open('https://www.google.com/maps'), location.href='about.html'">Continue</button>
+  <button class="button button1" id="closeDialog1">Back</button>
+    </center>
+  </div>
+</div>
+   
+<div class="overlay" id="dialog2">
+  <div class="info-content" style="height:225px;">
+    <h3>Caution: Unauthorized Links</h3>
+    <p>The link you clicked is not affiliated by Endcie Digital or UpDesktop Publishing. Continue anyway?</p>
+    <p>Link: https://youtu.be/dQw4w9WgXcQ?si=2C1ZqNWRHN_AVzMy</p>
+    <p></p>
+    <center>
+  <button class="button button1" onclick="window.open('https://youtu.be/dQw4w9WgXcQ?si=2C1ZqNWRHN_AVzMy'), location.href='about.html'">Yes</button>
+  <button class="button button1" id="closeDialog2">No</button>
+    </center>
+  </div>
+</div>
+
+<div class="disconnection" id="disconnect-screen">
+        <div class="offline-content">
+            <h3>You're offline</h3>
+            <h6>Please try again later</h6>
+        </div>
+    </div>
+   
+<script type="text/javascript" src="scripts/modal.js"></script>
+<script src="scripts/disconnection.js"></script>
+<script type="text/javascript" src="scripts/drawer.js"></script>
+
+
+</body></html>

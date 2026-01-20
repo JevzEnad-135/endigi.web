@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  height: 10px;
+  min-height: 3vh;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1190px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .calendar-container {
+    width: 350px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .container {
+    grid-template-columns: 2fr 2fr;
+  }
+  .calendar-container {
+    width: 750px;
+    max-width: 100%;
+  }
+}
+
+.item {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.calendar-container {
+  color: #ffffff;
+  border: 5px solid rgb(64, 64, 64);
+  border-radius: 10px;
+  background-color: rgb(132, 47, 67);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 500px;
+}
+
+.holiday {
+   width: 700px;
+   max-width: 100%;
+   text-align: center;
+   border: 5px solid rgb(64, 64, 64);
+   border-radius: 10px;
+   background-color: #228020;
+   color: #ffffff; 
+}
+
+.calendar-header {
+    background-color: rgb(132, 47, 67);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-grid {
+  background-color: #202020;
+  color: #ffffff;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-grid th, .calendar-grid td {
+    border: 2px solid #000000;
+    padding: 7px;
+    text-align: center;
+}
+
+.calendar-grid td.today {
+    background-color: rgb(85, 204, 244);
+}
+
+.day-button {
+  border: 30px;
+  color: rgb(255, 255, 255);
+  background-color: #0c79bc;
+  border-radius: 10px;
+  padding: 10px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 2px;
+ }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}

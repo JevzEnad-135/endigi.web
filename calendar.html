@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/calendar.css">
+  <title>Calendar - Endcie Digital</title>
+</head>
+<body>
+
+<div id="main-content">
+<div class="navbar">
+  <a onclick="location.href='index.html'">Home</a>
+  <a id="openDialog1">Maps</a>
+     <button class="dropbtn" id="open-drawer">Calendar</button>
+     <div class="hub-overlay" id="nav-overlay"></div>
+     <div id="nav-drawer" class="drawer">
+       <button class="nav-close" id="close-drawer">X</button>
+       <a onclick="location.href='index.html'">Home</a>
+       <a onclick="location.href='articles.html'">Almanac</a>
+       <a onclick="location.href='games.html'">Games</a>
+       <a onclick="location.href='calendar.html'">Calendar</a>
+       <a onclick="location.href='about.html'">About</a>
+    </div>
+ </div>
+
+<div class="content">
+<div class="container">
+<div class="item calendar-container">
+  <center><h2 id="currentMonthYear"></h2></center>
+    <div class="calendar-header">
+        <button class="button day-button" id="prevMonth">Prev</button>
+        <button class="button day-button" id="nextMonth">Next</button>
+    </div>
+    <table class="calendar-grid">
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendarBody">
+        </tbody>
+    </table>
+</div>
+  
+  <div class="item holiday">
+    <h3>Legal Holidays in the Philippines</h3>
+    <p>Holidays may update as the year goes by.</p>
+  <table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Day = Holiday</th>
+    </tr>
+  </thead>
+    
+  <tbody>
+    <tr>
+      <td>1) January</td>
+      <td>
+        <p>1 = New Year's Day</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>2) February</td>
+      <td>
+        <p>17 = Chinese New Year</p>
+        <p>25 = EDSA People Power Revolution Anniversary</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>3) March</td>
+      <td>
+        <p>No Holiday</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>4) April</td>
+      <td>
+        <p>2 = Maundy Thursday</p>
+        <p>3 = Good Friday</p>
+        <p>4 = Black Saturday</p>
+        <p>9 = Araw ng Kagitingan</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>5) May</td>
+      <td>
+        <p>1 = Labor Day</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>6) June</td>
+      <td>
+        <p>12 = Independence Day</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>7) July</td>
+      <td>
+        <p>No Holiday</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>8) August</td>
+      <td>
+        <p>21 = Ninoy Aquino Day</p>
+        <p>31 = National Heroes Day</p>
+      </td>
+      
+      <tr>
+      <td>9) September</td>
+      <td>
+        <p>No Holiday</p>
+      </td>
+    </tr>
+      
+      <tr>
+      <td>10) October</td>
+      <td>
+        <p>No Holiday</p>
+      </td>
+    </tr>
+      
+      <tr>
+      <td>11) November</td>
+      <td>
+        <p>1 = All Saints Day</p>
+        <p>2 = All Souls Day</p>
+        <p>5 = Negros Day (Negros Island Region)</p>
+        <p>30 = Bonifacio Day</p>
+      </td>
+    </tr>
+      
+      <tr>
+      <td>12) December</td>
+      <td>
+        <p>8 = Feast of Immaculate Conception of Mary</p>
+        <p>24 = Christmas Eve</p>
+        <p>25 = Christmas Day</p>
+        <p>30 = Rizal Day</p>
+        <p>31 = New Year's Day</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+</div>
+  
+<div class="overlay" id="dialog1" style="display:none">
+  <div class="info-content" style="height:150px;">
+    <h3>Leaving to Google Maps</h3>
+    <p>Google Maps will open as a Web. You can go back anytime.</p>
+    <center>
+  <button class="button button1" onclick="window.open('https://www.google.com/maps'), location.href='calendar.html'">Continue</button>
+  <button class="button button1" id="closeDialog1">Back</button>
+    </center>
+  </div>
+</div>
+
+<div class="disconnection" id="disconnect-screen">
+        <div class="offline-content">
+            <h3>You're offline</h3>
+            <h6>Please try again later</h6>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="scripts/calendar.js"></script>
+<script type="text/javascript" src="scripts/modal.js"></script>
+<script src="scripts/disconnection.js"></script>
+<script src="scripts/theme.js"></script>
+<script type="text/javascript" src="scripts/drawer.js"></script>
+
+
+</body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/article.css">
+  <title>Almanac - Endcie Digital</title>
+</head>
+<body>
+
+<div id="main-content">
+<div class="navbar">
+  <a onclick="location.href='index.html'">Home</a>
+  <a onclick="location.href='calendar.html'">Calendar</a>
+     <button class="dropbtn" id="open-drawer">Almanac</button>
+     <div class="hub-overlay" id="nav-overlay"></div>
+     <div id="nav-drawer" class="drawer">
+       <button class="nav-close" id="close-drawer">X</button>
+       <a onclick="location.href='index.html'">Home</a>
+       <a onclick="location.href='articles.html'">Almanac</a>
+       <a onclick="location.href='games.html'">Games</a>
+       <a onclick="location.href='calendar.html'">Calendar</a>
+       <a onclick="location.href='about.html'">About</a>
+    </div>
+ </div>
+
+<div class="content">
+ <div class="container">
+ <article class="item news-all">
+  <h2>Almanac</h2>
+  <p>A Weekly Topic based on the book, The World Almanac.</p>
+  
+  <div class="web-grid">
+   <article class="web">
+     <div class="image-container">
+     <img src="newspics/climate-change.jpg" alt="jpg1" style="width:1213px;height:200px;">
+       <div class="a-type">Environmental</div>
+       <div class="a-text">Climate Change</div>
+     </div>
+    <p style="text-align:left;">Frequent changes of the environment.</p>
+     <button class="button button-info" onclick="location.href='almanac1.html'">Read More</button>
+  </article>
+
+  <article class="web">
+    <div class="image-container">
+    <img src="newspics/bugcheck.jpg" alt="jpg2" style="width:1213px;height:200px;">
+      <div class="a-type">Computers</div>
+      <div class="a-text">Blue Screen Error (BSOD)</div>
+    </div>
+    <p style="text-align:left">An infamous error screen for Windows.</p>
+    <button class="button button-info" onclick="location.href='almanac2.html'">Read More</button>
+  </article>
+
+  <article class="web">
+     <div class="image-container">
+     <img src="#" style="width:1213px;height:200px;";>
+     </div>
+     <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Read More</button>
+  </article>
+
+  <article class="web">
+     <div class="image-container">
+     <img src="#" style="width:1213px;height:200px;";>
+     </div>
+     <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Read More</button>
+  </article>
+  </div>
+</article>
+
+<article class="item blogs">
+  <h2>News</h2>
+  <p>Our Official Latest Updates for Arcades</p>
+  <div class="web-grid">
+  <article class="web">
+  <div class="image-container">
+    <img src="#" style="width:1213px;height:200px;";>
+    </div>
+    <h3>Coming Soon</h3>
+    <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Read a Blog</button>
+    </article>
+  <article class="web">
+    <div class="image-container">
+    <img src="#" style="width:1213px;height:200px;";>
+    </div>
+    <h3>Coming Soon</h3>
+    <button class="button button-info" style="opacity:0.5;cursor:not-allowed;box-shadow:none;transform:none;">Read a Blog</button>
+  </article>
+  </div>
+</article>
+</div>
+  </div>
+
+<div class="disconnection" id="disconnect-screen">
+     <div class="offline-content">
+       <h3>You're offline</h3>
+       <h6>Almanacs must be online.</h6>
+       <h6>Please try again later</h6>
+   </div>
+</div>
+    
+<script src="scripts/disconnection.js"></script>
+<script type="text/javascript" src="scripts/drawer.js"></script>
+
+</body></html>
