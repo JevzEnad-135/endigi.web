@@ -23,9 +23,8 @@
   .container {
     grid-template-columns: 2fr 2fr;
   }
-  .calendar-container {
-    width: 750px;
-    max-width: 100%;
+  .calendar-container {
+    width: 100%;
   }
 }
 
@@ -45,9 +44,8 @@
   height: 500px;
 }
 
-.holiday {
-   width: 700px;
-   max-width: 100%;
+.holiday {
+   max-width: 200%;
    text-align: center;
    border: 5px solid rgb(64, 64, 64);
    border-radius: 10px;
